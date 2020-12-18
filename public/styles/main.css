@@ -1,3 +1,9 @@
 :root{
   --color-background-bar: #343837;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
