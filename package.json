@@ -1,0 +1,24 @@
+{
+  "name": "ProjetoSiteDelivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guilherm456/ProjetoSiteDelivery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guilherm456/ProjetoSiteDelivery/issues"
+  },
+  "homepage": "https://github.com/Guilherm456/ProjetoSiteDelivery#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  }
+}
