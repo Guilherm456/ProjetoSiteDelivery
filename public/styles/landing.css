@@ -2,4 +2,35 @@
     width: 100%;
     height: 5rem;
     background-color: var(--color-background-bar);
+    text-align: right;
+    vertical-align: middle;
+
 }
+
+.menubar{
+    width: 2rem;
+}
+
+
+.empresa_dest{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.statushorario{
+    font: 20 Inter;
+    color: #048243;
+}
+
+.logoemp{
+    padding-top: 2.25rem;
+    width: 20rem;
+    border-radius: 50%;  
+}
+
+.infsemp{
+    text-align: center;
+    font-size: 15px;
+}
+

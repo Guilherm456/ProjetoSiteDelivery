@@ -1,9 +1,35 @@
+
 :root{
   --color-background-bar: #343837;
+  --color-background-button: #F0F0F0;
+  --color-border-button: #C4C4C4;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter;
+
+}
+
+.titulodestaque{
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+.botaodest{
+  width: 247px;
+  height: 52px;
+  
+  background-color: var(--color-background-button);
+  font-size: 25px;
+  border: 1px solid var(--color-border-button) ;
+  
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align: center;
+
+  /* transition-duration: 0.4s; */
 }
