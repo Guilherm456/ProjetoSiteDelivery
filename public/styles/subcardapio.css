@@ -1,57 +1,61 @@
-.subnav{
+.subnav {
   width: 100%;
   height: 34px;
   background-color: var(--color-sub-bar);
 }
 
-.subnav a{
+.subnav a {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   padding-left: 12px;
 }
 
-.subnav .selected{
+.subnav .selected {
   color: var(--color-text-alert);
 }
 
-.subnav .nonselected{
+.subnav .nonselected {
   color: var(--color-text-normal);
 }
 
-.produtos{
+.produtos {
   width: 395px;
   padding: 10px 8px 0 8px;
 }
 
-.produto-lista{
+li {
+  list-style-type: none;
+}
+
+.produto-lista {
   display: flex;
   float: left;
   font-size: 18px;
   padding-bottom: 5px;
 }
 
-.produto-lista .fotoproduto{
+.produto-lista .fotoproduto {
   width: 76px;
   border-radius: 50%;
   padding-right: 3px;
 }
 
-.produto-lista .infsproduto{
+.produto-lista .infsproduto {
   width: 204px;
   height: 76px;
 }
 
-.produto-lista .nome_prod{
+.produto-lista .nome_prod {
   font-weight: bold;
   font-size: 22px;
 }
 
-.produto-lista .preco_num{
+.produto-lista .preco_num {
   text-align: center;
 }
 
-.produto-lista .numproduto{
+.produto-lista .numproduto {
   width: 100px;
   height: 32px;
 
@@ -59,13 +63,12 @@
   border-radius: 10px;
 }
 
-.produto-lista .numproduto .numdoproduto_texto{
+.produto-lista .numproduto .numdoproduto_texto {
   font-size: 30px;
   align-items: center;
 }
 
-.numproduto img{
+.numproduto img {
   width: 32px;
   cursor: pointer;
-
 }

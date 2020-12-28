@@ -1,53 +1,50 @@
-.empresa_dest{
+.empresa_dest {
   width: 100%;
   text-align: center;
   padding-bottom: 3px;
 }
 
-.statushorario{
+.statushorario {
   font: 700 20px Inter;
   color: #048243;
 }
 
-.logoemp{
+.logoemp {
   padding-top: 10px;
   width: 180px;
-  border-radius: 50%;  
+  border-radius: 50%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.botaocardapio{
+.botaocardapio {
   padding-top: 10px;
-  align-content: center;
-}
-
-.botaocardapio .botao{
-  
-}
-.botaocardapio a{
   text-align: center;
+}
 
+.botaocardapio a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao {
   width: 240px;
   height: 50px;
+  line-height: 50px;
+
+  display: inline-block;
 
   background-color: var(--color-background-button);
   border: 1px solid var(--color-border-button);
   border-radius: 10px;
-  text-decoration: none;
-  cursor: pointer;
   color: #000;
 
   font-size: 25px;
-
 }
 
-
-
-.infsemp{
+.infsemp {
   position: fixed;
   bottom: 10px;
   width: 100%;
   text-align: center;
   font-size: 18px;
 }
-

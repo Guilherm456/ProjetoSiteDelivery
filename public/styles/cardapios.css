@@ -1,34 +1,37 @@
-main a{
+main a {
   text-decoration: none;
   color: #fff;
 }
 
-.secoes{
+.secoes {
   position: relative;
   width: 100%;
   height: 192px;
-  background: linear-gradient(to bottom,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.33) 7%,rgba(0,0,0,0.65) 86%,rgba(0,0,0,0.65) 100%);
+  /* line-height: 192px; */
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.33) 7%,
+    rgba(0, 0, 0, 0.65) 86%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
   text-align: center;
 }
 
-.secoes .fundo{
+.secoes .fundo {
   position: absolute;
   width: 100%;
   height: 100%;
 
-  background:url(https://static.expressodelivery.com.br/imagens/backgrounds/174/Expresso-Delivery_198906f2c002545631e9c36d0048653c.jpg) center center; 
+  background: url(https://static.expressodelivery.com.br/imagens/backgrounds/174/Expresso-Delivery_198906f2c002545631e9c36d0048653c.jpg)
+    center center;
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   filter: blur(1.5px);
 }
 
-.secoes h1{
+.secoes .titulo {
   position: relative;
-  padding-top: 55px;
+  top: 25%;
 }
-
-.secoes p{
-  position: relative;
-}
-
-

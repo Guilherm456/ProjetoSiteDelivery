@@ -2,100 +2,97 @@
 <html lang="pt-BR">
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Cardápio</title>
-        
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/subcardapio.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"/>   
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio</title>
 
-        </head>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/subcardapio.css">
 
-    <body>
-      <nav>
-        <div class="containar">
-          <div class="barrasup">
-            <a>
-              <img src="/img/svg/hamburger.svg" class="menubar" >
-            </a>
-            <a>
-              <img src="/img/svg/arrow-left.svg" class="backbutton" onclick="window.history.go(-1); return false;">
-            </a>
-        </div>
-      </nav>
+  <script src="/scripts/cardapio.js" defer></script>
 
-      <main>
-        <div class="subnav">
-            <a class="selected">
-              Refrigerantes
-            </a>
-            <a class="nonselected">
-              Sucos
-            </a>
-        </div>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-        <div class="produtos">
-          <ul>
-            <li>
-              <a src="aaa">
-                <div class="produto-lista">
-                  <img src="" 
-                    class="fotoproduto" 
-                    src="" 
-                    alt="Imagem do produto" 
-                    loading="lazy"
-                    onerror="this.src='/img/default.png'"
-                  >
+</head>
 
-                <div class="infsproduto">
-                  <span class="nome_prod">Coca-Cola 2lt</span>
-                  <span class="desc_prod">Descrição</span>
+<body>
+  <nav>
+    <div class="containar">
+      <div class="barrasup">
+        <a>
+          <img src="/img/svg/hamburger.svg" class="menubar">
+        </a>
+        <a>
+          <img src="/img/svg/arrow-left.svg" class="backbutton" onclick="window.history.go(-1); return false;">
+        </a>
+      </div>
+  </nav>
+
+  <main>
+    <div class="subnav">
+      <a class="selected">
+        Refrigerantes
+      </a>
+      <a class="nonselected">
+        Sucos
+      </a>
+    </div>
+
+    <div class="produtos">
+      <ul>
+        <li>
+          <a>
+            <div class="produto-lista">
+              <img src="" class="fotoproduto" src="" alt="Imagem do produto" loading="lazy"
+                onerror="this.src='/img/default.png'">
+
+              <div class="infsproduto">
+                <span class="nome_prod">Coca-Cola 2lt</span>
+                <span class="desc_prod">Descrição</span>
+              </div>
+              <div class="preco_num">
+                <div class="numproduto">
+                  <img class="botao_dim" src="/img/svg/minus.svg" alt="Diminuir o número de produtos"
+                    onclick="remProduto()">
+                  <span class="numdoproduto_texto">0</span>
+                  <img class="botao_add" src="/img/svg/plus.svg" alt="Aumentar o número de produtos"
+                    onclick="addProduto()">
                 </div>
-                <div class="preco_num">
-                  <div class="numproduto">
-                    <img class="botao_dim" src="/img/svg/minus.svg" alt="Diminuir o número de produtos">
-                    <span class="numdoproduto_texto">0</span>
-                    <img class="botao_add" src="/img/svg/plus.svg" alt="Aumentar o número de produtos">
-                  </div>
-                  <span class="preco_prod">R$10,00</span>
-                </div>
-                </div>
-              </a>
-            </li>
-            
-            <li>
-              <a src="aaa">
-                <div class="produto-lista">
-                  <img src="" 
-                    class="fotoproduto" 
-                    src="" 
-                    alt="Imagem do produto" 
-                    loading="lazy"
-                    onerror="this.src='/img/default.png'"
-                  >
+                <span class="preco_prod">R$10,00</span>
+              </div>
+            </div>
+          </a>
+        </li>
 
-                <div class="infsproduto">
-                  <!-- onerror="this.src='fallback.png'"> -->
-                  <span class="nome_prod">Coca-Cola 2lt</span>
-                  <span class="desc_prod">Descrição</span>
-                </div>
-                <div class="preco_num">
-                  <div class="numproduto">
-                    <img class="botao_dim" src="/img/svg/minus.svg" alt="Diminuir o número de produtos">
-                    <span class="numdoproduto_texto">0</span>
-                    <img class="botao_add" src="/img/svg/plus.svg" alt="Aumentar o número de produtos">
-                  </div>
-                  <span class="preco_prod">R$10,00</span>
-                </div>
-                </div>
-              </a>
-            </li>
+        <li>
+          <a>
+            <div class="produto-lista">
+              <img src="" class="fotoproduto" src="" alt="Imagem do produto" loading="lazy"
+                onerror="this.src='/img/default.png'">
 
-          </ul>
-        </div>
-      </main>
-    </body>
+              <div class="infsproduto">
+                <span class="nome_prod">Coca-Cola 2lt</span>
+                <span class="desc_prod">Descrição</span>
+              </div>
+              <div class="preco_num">
+                <div class="numproduto">
+                  <img class="botao_dim" src="/img/svg/minus.svg" alt="Diminuir o número de produtos"
+                    onclick="remProduto()">
+                  <span class="numdoproduto_texto">0</span>
+                  <img class="botao_add" src="/img/svg/plus.svg" alt="Aumentar o número de produtos"
+                    onclick="addProduto()">
+                </div>
+                <span class="preco_prod">R$10,00</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </main>
+</body>
+
 </html>
