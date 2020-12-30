@@ -1,12 +1,25 @@
+li {
+  list-style-type: none;
+}
+
 .subnav {
   width: 100%;
   height: 34px;
   background-color: var(--color-sub-bar);
+  display: flex;
+}
+
+.subnav li{
+  align-items: center;
+  display: flex;  
+  justify-content: center;
 }
 
 .subnav a {
   text-decoration: none;
-  font-size: 20px;
+  cursor: pointer;
+   
+  font-size: var(--size-titulo);
   font-weight: bold;
   padding-left: 12px;
 }
@@ -20,35 +33,45 @@
 }
 
 .produtos {
-  width: 395px;
   padding: 10px 8px 0 8px;
 }
 
-li {
-  list-style-type: none;
-}
 
 .produto-lista {
   display: flex;
-  float: left;
   font-size: 18px;
   padding-bottom: 5px;
+  height: 76px;
 }
 
+
 .produto-lista .fotoproduto {
-  width: 76px;
+  width: var(--size-picture);
+  height: var(--size-picture);
   border-radius: 50%;
   padding-right: 3px;
 }
 
 .produto-lista .infsproduto {
-  width: 204px;
-  height: 76px;
+  width: 234px;
+  height: 50px;
+}
+
+.produto-lista.prod_editavel .infsproduto{
+  width: 200px;
+}
+
+.produto-lista .edit_prod{
+  vertical-align: middle;
 }
 
 .produto-lista .nome_prod {
   font-weight: bold;
-  font-size: 22px;
+  font-size: var(--size-titulo-sec);
+}
+
+.produto-lista .desc_prod{
+  font-size: var(--size-descricao);
 }
 
 .produto-lista .preco_num {
@@ -56,16 +79,25 @@ li {
 }
 
 .produto-lista .numproduto {
-  width: 100px;
+  width: 95px;
   height: 32px;
+
 
   border: 1px solid #000;
   border-radius: 10px;
 }
 
+.produto-lista .edit_prod{
+  width: var(--size-icons);
+
+  padding-left: 3px;
+}
+
 .produto-lista .numproduto .numdoproduto_texto {
-  font-size: 30px;
+  font-size: var(--size-supertitulo) ;
   align-items: center;
+  position: relative;
+  top: -10%;
 }
 
 .numproduto img {

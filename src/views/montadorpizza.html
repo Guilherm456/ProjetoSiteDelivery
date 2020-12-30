@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<html>
     <head>
         <meta charset="UTF-8">
         <title>Montar pizza</title>
@@ -15,20 +13,32 @@
         </head>
 
     <body>
+      <div class="container">
       <nav>
-        <div class="containar">
           <div class="barrasup">
             <a>
-              <img src="/img/svg/hamburger.svg" class="menubar" >
+              <img src="/img/svg/hamburger.svg" class="menubar" alt="Abrir menu lateral">
             </a>
             <a>
-              <img src="/img/svg/arrow-left.svg" class="backbutton" onclick="window.history.go(-1); return false;">
+              <img src="/img/svg/arrow-left.svg" class="backbutton" onclick="window.history.go(-1); return false;" alt="Voltar">
             </a>
-        </div>
+          </div>
       </nav>
 
       <main>
+        <div class="montador">
+          <div class="pizza">
+            <img src="/img/default.png" class="background-montador-pizza">
+          </div>
+          <div class="botoes-montador">
+            <button class="botoes">Número de sabores</button> 
+            <button class="botoes">Tamanho</button>
+            <button class="botoes">Massa</button>
+            <button class="botoes">Borda</button>
 
+          </div>
+        </div>
       </main>
+      </div>
     </body>
 </html>

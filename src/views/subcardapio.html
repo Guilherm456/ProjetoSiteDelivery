@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<html>
-
 <head>
   <meta charset="UTF-8">
   <title>Cardápio</title>
@@ -18,8 +16,9 @@
 </head>
 
 <body>
+  <div class="container">
+
   <nav>
-    <div class="containar">
       <div class="barrasup">
         <a>
           <img src="/img/svg/hamburger.svg" class="menubar">
@@ -31,26 +30,33 @@
   </nav>
 
   <main>
-    <div class="subnav">
-      <a class="selected">
-        Refrigerantes
-      </a>
-      <a class="nonselected">
-        Sucos
-      </a>
-    </div>
+    <!-- <div class="subnav"> -->
+      <ul class="subnav">
+        <li>
+          <a class="selected">Refrigerantes</a>
+        </li> 
+        <li>
+          <a class="nonselected">Sucos</a>
+        </li>
+      </ul>
+    <!-- </div> -->
 
     <div class="produtos">
       <ul>
         <li>
-          <a>
-            <div class="produto-lista">
-              <img src="" class="fotoproduto" src="" alt="Imagem do produto" loading="lazy"
+            <div class="produto-lista prod_editavel">
+              <img src="" class="fotoproduto" alt="Imagem do produto" loading="lazy"
                 onerror="this.src='/img/default.png'">
 
               <div class="infsproduto">
-                <span class="nome_prod">Coca-Cola 2lt</span>
-                <span class="desc_prod">Descrição</span>
+                <span class="nome_prod">Coca-Cola 2lt</span> <br>
+                <span class="desc_prod">teste</span>
+              </div>
+
+              <div>
+                <a>
+                  <img src="/img/svg/edit.svg" class="edit_prod">
+                </a>
               </div>
               <div class="preco_num">
                 <div class="numproduto">
@@ -63,18 +69,15 @@
                 <span class="preco_prod">R$10,00</span>
               </div>
             </div>
-          </a>
         </li>
-
         <li>
-          <a>
             <div class="produto-lista">
-              <img src="" class="fotoproduto" src="" alt="Imagem do produto" loading="lazy"
+              <img src="" class="fotoproduto" alt="Imagem do produto" loading="lazy"
                 onerror="this.src='/img/default.png'">
 
               <div class="infsproduto">
-                <span class="nome_prod">Coca-Cola 2lt</span>
-                <span class="desc_prod">Descrição</span>
+                <span class="nome_prod">Coca-Cola 2lt</span> <br>
+                <span class="desc_prod">teste</span>
               </div>
               <div class="preco_num">
                 <div class="numproduto">
@@ -87,12 +90,13 @@
                 <span class="preco_prod">R$10,00</span>
               </div>
             </div>
-          </a>
         </li>
-
       </ul>
+
     </div>
   </main>
+  
+  </div>
 </body>
 
 </html>

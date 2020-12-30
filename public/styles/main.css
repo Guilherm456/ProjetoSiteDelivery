@@ -8,6 +8,14 @@
   --color-text-alert: #FF2D2D;
   --color-text-normal: #333333;
   
+  --size-supertitulo: 30px;
+  --size-titulo: 22px;
+  --size-descricao: 14px;
+  --size-titulo-sec: 16px;
+
+
+  --size-picture: 60px;
+  --size-icons: 32px;
 }
 
 .container{
@@ -21,8 +29,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+a{
+  cursor: pointer;
+}
+
 .titulodestaque{
-  font-size: 22px;
+  font-size: var(--size-titulo);
   font-weight: bold;
 
 }
@@ -32,11 +44,10 @@
   height: 56px;
   background-color: var(--color-background-bar); 
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
-
 }
 
 .barrasup a{
-  padding-left: 5px;
+  padding-left: 2.5px;
   cursor: pointer;
 }
 

@@ -13,7 +13,10 @@ function pagemontadorPizza(req,res)
 {
   return res.render("montadorpizza.html");
 }
+function pageLogin(req,res){
+  return res.render("login.html");
+}
 //Exporta os dados (paginas)
 module.exports = {
-  pageLanding, pageCardapio, pagesubCardapio, pagemontadorPizza
+  pageLanding, pageCardapio, pagesubCardapio, pagemontadorPizza, pageLogin
 };

@@ -7,7 +7,6 @@ main a {
   position: relative;
   width: 100%;
   height: 192px;
-  /* line-height: 192px; */
 
   background: linear-gradient(
     to bottom,
@@ -17,6 +16,7 @@ main a {
     rgba(0, 0, 0, 0.65) 100%
   );
   text-align: center;
+  
 }
 
 .secoes .fundo {
@@ -33,5 +33,7 @@ main a {
 
 .secoes .titulo {
   position: relative;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-50%); 
+
 }

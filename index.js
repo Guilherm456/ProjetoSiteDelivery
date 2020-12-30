@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();
 
-const {pageLanding,pageCardapio, pagesubCardapio, pagemontadorPizza} = require('./src/pages');
+const {pageLanding,pageCardapio, pagesubCardapio, pagemontadorPizza, pageLogin} = require('./src/pages');
 
 const nunjucks = require('nunjucks');
 nunjucks.configure('src/views', {
@@ -17,4 +17,6 @@ server
 .get('/cardapio',pageCardapio)
 .get('/subcardapio',pagesubCardapio)
 .get('/montadorpizza',pagemontadorPizza)
+
+.get('/login',pageLogin)
 .listen(5500);
