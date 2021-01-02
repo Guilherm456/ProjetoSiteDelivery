@@ -1,0 +1,29 @@
+.header_pag {
+  text-align: center;
+}
+.titulo_pag {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: var(--size-titulo-pagina);
+}
+.header_pag hr {
+  max-width: 360px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario {
+  padding: 48px 8px 0 8px;
+  text-align: center;
+}
+
+.formulario label {
+  font-size: var(--size-titulo);
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.input_bloco {
+  padding-bottom: 20px;
+}

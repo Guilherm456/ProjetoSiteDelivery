@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Montar pizza</title>
-        
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/montadorpizza.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Montar pizza</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"/>   
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/montadorpizza.css" />
 
-        </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+  </head>
 
-    <body>
-      <div class="container">
-      <nav>
-          <div class="barrasup">
-            <a>
-              <img src="/img/svg/hamburger.svg" class="menubar" alt="Abrir menu lateral">
-            </a>
-            <a>
-              <img src="/img/svg/arrow-left.svg" class="backbutton" onclick="window.history.go(-1); return false;" alt="Voltar">
-            </a>
-          </div>
-      </nav>
-
-      <main>
-        <div class="montador">
-          <div class="pizza">
-            <img src="/img/default.png" class="background-montador-pizza">
-          </div>
-          <div class="botoes-montador">
-            <button class="botoes">Número de sabores</button> 
-            <button class="botoes">Tamanho</button>
-            <button class="botoes">Massa</button>
-            <button class="botoes">Borda</button>
-
-          </div>
-        </div>
-      </main>
+  <body>
+    <nav>
+      <div class="barrasup">
+        <a>
+          <img
+            src="/img/svg/hamburger.svg"
+            class="menubar"
+            alt="Abrir menu lateral"
+          />
+        </a>
+        <a>
+          <img
+            src="/img/svg/arrow-left.svg"
+            class="backbutton"
+            onclick="window.history.go(-1); return false;"
+            alt="Voltar"
+          />
+        </a>
       </div>
-    </body>
+    </nav>
+
+    <main>
+      <div class="montador">
+        <div class="pizza">
+          <img src="/img/default.png" class="background-montador-pizza" />
+        </div>
+        <div class="botoes-montador">
+          <button class="botao sub">Número de sabores</button> <br />
+          <button class="botao sub">Tamanho</button> <br />
+          <button class="botao sub">Massa</button> <br />
+          <button class="botao sub">Borda</button> <br />
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

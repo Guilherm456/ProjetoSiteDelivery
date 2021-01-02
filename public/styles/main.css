@@ -1,61 +1,124 @@
-
-:root{
+:root {
   --color-background-bar: #343837;
-  --color-background-button: #F0F0F0;
-  --color-border-button: #C4C4C4;
-  --color-sub-bar: #D8D8D8;
+  --color-background-button: #f0f0f0;
+  --color-border-button: #c4c4c4;
+  --color-sub-bar: #d8d8d8;
+  --color-border-input: #7a7a7a;
+  --color-background-input: rgba(134, 134, 134, 0.2);
+  --color-background-button-flashy: #ea1d2c;
+  --color-background-button-off: #000;
 
-  --color-text-alert: #FF2D2D;
+  --color-text: #000;
+  --color-text-alert: #ff2d2d;
   --color-text-normal: #333333;
-  
+
+  --size-titulo-pagina: 45px;
   --size-supertitulo: 30px;
   --size-titulo: 22px;
-  --size-descricao: 14px;
+  --size-descricao: 12px;
   --size-titulo-sec: 16px;
 
-
-  --size-picture: 60px;
+  --size-picture: 88px;
   --size-icons: 32px;
 }
 
-.container{
-  height: 100%;
-  width: 100%;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-a{
+main {
+  margin: 56px auto;
+}
+
+a {
   cursor: pointer;
 }
 
-.titulodestaque{
+.titulodestaque {
   font-size: var(--size-titulo);
   font-weight: bold;
-
 }
 
-.barrasup{
+.barrasup {
+  position: fixed;
+  top: 0;
+
   width: 100%;
   height: 56px;
-  background-color: var(--color-background-bar); 
+  z-index: 2;
+
+  box-sizing: border-box;
+
+  background-color: var(--color-background-bar);
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
-.barrasup a{
+.barrasup a {
   padding-left: 2.5px;
   cursor: pointer;
 }
 
-.backbar{
+.backbar {
   float: left;
   width: 56px;
 }
-.menubar{
+.menubar {
   float: right;
   width: 56px;
+}
+
+.botao {
+  width: 360px;
+  max-width: 95%;
+  height: 52px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+.botao:hover {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+.botao.sub {
+  background-color: var(--color-background-button);
+  border: 1px solid var(--color-border-button);
+  color: #000;
+
+  font-size: 25px;
+}
+
+.botao.cham {
+  background-color: var(--color-background-button-flashy);
+  border: 0px;
+  border-radius: 5px;
+
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+}
+
+.botao.of {
+  background-color: var(--color-background-button-off);
+  border: 0px;
+
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+}
+
+.input {
+  width: 360px;
+  max-width: 95%;
+  height: 43px;
+
+  border: 1px solid var(--color-border-input);
+  background: var(--color-background-input);
+  border-radius: 10px;
+
+  transition: background 0.2s;
+}
+
+.input:hover {
+  background: var(--color-sub-bar);
 }

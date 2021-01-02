@@ -6,8 +6,9 @@
       <title>Entrar</title>
 
       <link rel="stylesheet" href="/styles/main.css" />
-      <link rel="stylesheet" href="/styles/cardapios.css" />
+      <link rel="stylesheet" href="/styles/login.css" />
 
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
         rel="stylesheet"
@@ -19,27 +20,46 @@
     </head>
 
     <body>
-      <div class="container">
-        <nav>
-          <div class="barrasup">
-            <a>
-              <img src="/img/svg/hamburger.svg" class="menubar" alt="Abrir menu lateral"/>
-            </a>
-            <a>
-              <img
-                src="/img/svg/arrow-left.svg"
-                class="backbutton"
-                onclick="window.history.go(-1); return false;"
-                alt="Voltar"
-              />
-            </a>
+      <header>
+        <div class="barrasup">
+          <a>
+            <img
+              src="/img/svg/hamburger.svg"
+              class="menubar"
+              alt="Abrir menu lateral"
+            />
+          </a>
+          <a>
+            <img
+              src="/img/svg/arrow-left.svg"
+              class="backbutton"
+              onclick="window.history.go(-1); return false;"
+              alt="Voltar"
+            />
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <div class="header_pag">
+          <h1 class="titulo_pag">Conectar</h1>
+          <hr />
+        </div>
+
+        <form action="" class="formulario">
+          <div class="input_bloco">
+            <label for="email">E-mail</label> <br />
+            <input type="email" id="email" class="input" /><br />
           </div>
-        </nav>
+          <div class="input_bloco">
+            <label for="senha">Senha</label> <br />
+            <input type="password" id="senha" class="input" /><br />
+          </div>
 
-        <main>
-
-        </main>
-      </div>
+          <button type="submit" class="botao cham">Entrar</button> <br />
+          <button onclick="" class="botao of">Criar conta</button>
+        </form>
+      </main>
     </body>
   </html>
 </html>
