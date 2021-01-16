@@ -21,15 +21,18 @@
   <body>
     <header>
       <div class="barrasup">
-        <a>
-          <img src="/img/svg/hamburger.svg" class="menubar" />
+        <a onclick="window.history.go(-1); return false;">
+          <svg role="img" class="backbutton" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none"> 
+            <title>Voltar a página anterior</title>
+            <path d="M9 6l-6 6 6 6"/>
+            <path d="M21 12H4"/> <path stroke-linecap="round" d="M3 12h1"/>
+          </svg>
         </a>
         <a>
-          <img
-            src="/img/svg/arrow-left.svg"
-            class="backbutton"
-            onclick="window.history.go(-1); return false;"
-          />
+          <svg role="img" class="menubar" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"> 
+            <title>Fechar menu</title>
+             <path d="M6 7L18 7M6 12L18 12M6 17L18 17"/>
+          </svg>
         </a>
       </div>
     </header>

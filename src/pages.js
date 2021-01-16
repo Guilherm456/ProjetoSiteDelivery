@@ -13,6 +13,9 @@ function pagemontadorPizza(req, res) {
 function pageLogin(req, res) {
   return res.render("login.html");
 }
+function pageCadastrar(req,res){
+  return res.render("cadastro.html");
+}
 //Exporta os dados (paginas)
 module.exports = {
   pageLanding,
@@ -20,4 +23,5 @@ module.exports = {
   pagesubCardapio,
   pagemontadorPizza,
   pageLogin,
+  pageCadastrar
 };

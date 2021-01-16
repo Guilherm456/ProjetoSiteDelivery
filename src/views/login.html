@@ -22,43 +22,44 @@
     <body>
       <header>
         <div class="barrasup">
-          <a>
-            <img
-              src="/img/svg/hamburger.svg"
-              class="menubar"
-              alt="Abrir menu lateral"
-            />
+          <a onclick="window.history.go(-1); return false;">
+            <svg role="img" class="backbutton" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none"> 
+              <title>Voltar a página anterior</title>
+              <path d="M9 6l-6 6 6 6"/>
+              <path d="M21 12H4"/> <path stroke-linecap="round" d="M3 12h1"/>
+            </svg>
           </a>
           <a>
-            <img
-              src="/img/svg/arrow-left.svg"
-              class="backbutton"
-              onclick="window.history.go(-1); return false;"
-              alt="Voltar"
-            />
+            <svg role="img" class="menubar" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"> 
+              <title>Fechar menu</title>
+              <path d="M6 7L18 7M6 12L18 12M6 17L18 17"/>
+            </svg>
           </a>
         </div>
       </header>
 
       <main>
-        <div class="header_pag">
-          <h1 class="titulo_pag">Conectar</h1>
-          <hr />
-        </div>
-
+        <div class="secao">
         <form action="" class="formulario">
+          <div class="header_pag secao">
+            <h1>Login</h1>
+          </div>
+          
+          <fieldset>
           <div class="input_bloco">
             <label for="email">E-mail</label> <br />
-            <input type="email" id="email" class="input" /><br />
+            <input type="email" id="email" class="input" required/><br />
           </div>
           <div class="input_bloco">
             <label for="senha">Senha</label> <br />
-            <input type="password" id="senha" class="input" /><br />
+            <input type="password" id="senha" class="input" required/><br />
           </div>
 
           <button type="submit" class="botao cham">Entrar</button> <br />
-          <button onclick="" class="botao of">Criar conta</button>
+          <button type="button" onclick="location.href = '/cadastro'" class="botao of">Criar conta</button>
+          </fieldset>
         </form>
+        </div>
       </main>
     </body>
   </html>

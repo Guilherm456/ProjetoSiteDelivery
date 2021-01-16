@@ -1,179 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cardápio</title>
-
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/subcardapio.css" />
-
-    <script src="/scripts/cardapio.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="viewport"
-      content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
-  </head>
-
-  <body>
-    <header>
-      <div class="barrasup">
-        <a>
-          <img src="/img/svg/hamburger.svg" class="menubar" />
-        </a>
-        <a>
-          <img
-            src="/img/svg/arrow-left.svg"
-            class="backbutton"
-            onclick="window.history.go(-1); return false;"
-          />
-        </a>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Cardápio</title>
+      <link rel="stylesheet" href="/styles/main.css" />
+      <link rel="stylesheet" href="/styles/subcardapio.css" />
+      <script src="/scripts/cardapio.js" defer></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+         rel="stylesheet"
+         />
+      <meta
+         name="viewport"
+         content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
+         />
+   </head>
+   <body>
+      <header>
+         <div class="barrasup">
+            <a onclick="window.history.go(-1); return false;">
+               <svg role="img" class="backbutton" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none">
+                  <title>Voltar a página anterior</title>
+                  <path d="M9 6l-6 6 6 6"/>
+                  <path d="M21 12H4"/>
+                  <path stroke-linecap="round" d="M3 12h1"/>
+               </svg>
+            </a>
+            <a>
+               <svg role="img" class="menubar" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter">
+                  <title>Fechar menu</title>
+                  <path d="M6 7L18 7M6 12L18 12M6 17L18 17"/>
+               </svg>
+            </a>
+         </div>
+      </header>
+      <div class='container-edicao'>
+         <div class='editar-produto'>
+            <header class='barra-edicao'>
+              <div>
+               <a onclick="fecharmenu('container-edicao')" >
+                  <svg role='img' class="svg-padrao" viewBox='0 0 24 24' aria-labelledby='closeIconTitle' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter'>
+                     <title>Fechar menu do produto</title>
+                     <path d='M6.34314575 6.34314575L17.6568542 17.6568542M6.34314575 17.6568542L17.6568542 6.34314575'/>
+                  </svg>
+               </a>
+              </div>
+              <h2>Hambúrguer de carne</h2>
+            </header>
+            <div class='area-foto-produto'>
+               <img src='/img/teste.jpg' alt='Imagem do produto' class='foto-produto'>
+               </div>
+            <form action="">
+               <section class='area-infs-edicao'>
+                  <article>
+                     <ul class='lista-opcoes-add input-radio'>
+                        <div class='area-titulo-secao'>
+                           <h3>Adicionais</h3>
+                           <p>Limite: 1</p>
+                        </div>
+                        <li>
+                           <label for="adicional-1" class='infs-add'>
+                              <h3 class="titulo_produto">Cheddar</h3>
+                              <p class="descricao">100g de cheddar</p>
+                              <p class="preco_produto">+ R$16,00</p>
+                           </label>
+                           <div class="area-input">
+                              <input type="radio" id="adicional-1" name="adicional" required>
+                           </div>
+                        </li>
+                     </ul>
+                  </article>
+                  <article>
+                     <ul class='lista-opcoes-add input-number'>
+                        <div class='area-titulo-secao'>
+                           <h1>Adicionais</h1>
+                           <p>Limite: 1</p>
+                        </div>
+                        <li>
+                           <label for="adicional-1" class='infs-add'>
+                              <h2 class="titulo_produto">Cheddar</h2>
+                              <p class="descricao">100g de cheddar</p>
+                              <p class="preco_produto">+ R$16,00</p>
+                           </label>
+                           <div class="area-input">
+                              <div class="area-numero-add">
+                                 <a >
+                                    <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-padrao desativado">
+                                       <title>Diminuir número de adicional</title>
+                                       <path d="M20,12 L4,12"/>
+                                    </svg>
+                                 </a>
+                                 <p class="numero-adicionado">0</p>
+                                 <a>
+                                    <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-padrao">
+                                       <title>Aumentar número de adicional</title>
+                                       <path d="M20 12L4 12M12 4L12 20"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </article>
+               </section>
+               <footer>
+                  <div class="area-conclusao-add">
+                     <div class="area-numero-add">
+                        <a>
+                           <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-padrao desativado">
+                              <title>Diminuir número de adicional</title>
+                              <path d="M20,12 L4,12"/>
+                           </svg>
+                        </a>
+                        <p class="numero-adicionado">0</p>
+                        <a>
+                           <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-padrao">
+                              <title>Aumentar número de adicional</title>
+                              <path d="M20 12L4 12M12 4L12 20"/>
+                           </svg>
+                        </a>
+                     </div>
+                     <button class="botao cham">Adicionar R$20,00</button>
+                  </div>
+               </footer>
+            </form>
+         </div>
       </div>
-    </header>
-
-    <main>
-      <ul class="subnav">
-        <li>
-          <a class="selected">Refrigerantes</a>
-        </li>
-        <li>
-          <a class="nonselected">Sucos</a>
-        </li>
-      </ul>
-
-      <ul class="produtos_secao">
-        <li>
-          <a href="">
-            <div class="produto">
-              <div class="infs_produto">
-                <h3 class="titulo_produto">Hambúrguer de costela</h3>
-                <span class="descricao">
-                  Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
-                  batata frita de 100g, queijo prato
-                </span>
-                <br />
-                <button class="botao cham">Adicionar</butt>
-              </div>
-
-              <div class="sobre_produto">
-                <img src="/img/default.png" alt="Imagem do produto" /> <br />
-                <span class="preco_produto">A partir de R$10,00</span>
-              </div>
-            </div>
-            <hr />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="produto">
-              <div class="infs_produto">
-                <h3 class="titulo_produto">Hambúrguer de costela</h3>
-                <span class="descricao">
-                  Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
-                  batata frita de 100g, queijo prato
-                </span>
-                <br />
-                <button class="botao cham">Adicionar</button>
-              </div>
-
-              <div class="sobre_produto">
-                <img src="/img/default.png" alt="Imagem do produto" /> <br />
-                <span class="preco_produto">A partir de R$10,00</span>
-              </div>
-            </div>
-            <hr />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="produto">
-              <div class="infs_produto">
-                <h3 class="titulo_produto">Hambúrguer de costela</h3>
-                <span class="descricao">
-                  Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
-                  batata frita de 100g, queijo prato
-                </span>
-                <br />
-                <button class="botao cham">Adicionar</button>
-              </div>
-
-              <div class="sobre_produto">
-                <img src="/img/default.png" alt="Imagem do produto" /> <br />
-                <span class="preco_produto">A partir de R$10,00</span>
-              </div>
-            </div>
-            <hr />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="produto">
-              <div class="infs_produto">
-                <h3 class="titulo_produto">Hambúrguer de costela</h3>
-                <span class="descricao">
-                  Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
-                  batata frita de 100g, queijo prato
-                </span>
-                <br />
-                <button class="botao cham">Adicionar</button>
-              </div>
-
-              <div class="sobre_produto">
-                <img src="/img/default.png" alt="Imagem do produto" /> <br />
-                <span class="preco_produto">A partir de R$10,00</span>
-              </div>
-            </div>
-            <hr />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="produto">
-              <div class="infs_produto">
-                <h3 class="titulo_produto">Hambúrguer de costela</h3>
-                <span class="descricao">
-                  Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
-                  batata frita de 100g, queijo prato
-                </span>
-                <br />
-                <button class="botao cham">Adicionar</button>
-              </div>
-
-              <div class="sobre_produto">
-                <img src="/img/default.png" alt="Imagem do produto" /> <br />
-                <span class="preco_produto">A partir de R$10,00</span>
-              </div>
-            </div>
-            <hr />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="produto">
-              <div class="infs_produto">
-                <h3 class="titulo_produto">Hambúrguer de costela</h3>
-                <span class="descricao">
-                  Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
-                  batata frita de 100g, queijo prato
-                </span>
-                <br />
-                <button class="botao cham">Adicionar</button>
-              </div>
-
-              <div class="sobre_produto">
-                <img src="/img/default.png" alt="Imagem do produto" /> <br />
-                <span class="preco_produto">A partir de R$10,00</span>
-              </div>
-            </div>
-            <hr />
-          </a>
-        </li>
-      </ul>
-    </main>
-  </body>
+      </div>
+      <main>
+         <ul class="subnav">
+            <li>
+               <a class="selected">Refrigerantes</a>
+            </li>
+            <li>
+               <a class="nonselected">Sucos</a>
+            </li>
+         </ul>
+         <ul class="produtos_secao">
+            <li>
+               <a onclick="abrirmenu('container-edicao')">
+                  <div class="produto">
+                     <div class="infs_produto">
+                        <h3 class="titulo_produto">Hambúrguer de costela</h3>
+                        <span class="descricao">
+                        Pão com gergelim, maionese, alface, cebola, hambúrguer de 180,
+                        batata frita de 100g, queijo prato
+                        </span>
+                        <br />
+                        <button class="botao cham">Adicionar</butt>
+                     </div>
+                     <div class="sobre_produto">
+                        <img src="/img/default.png" alt="Imagem do produto" /> <br />
+                        <span class="preco_produto">A partir de R$10,00</span>
+                     </div>
+                  </div>
+               </a>
+            </li>
+         </ul>
+      </main>
+   </body>
 </html>

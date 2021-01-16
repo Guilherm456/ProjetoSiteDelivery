@@ -7,6 +7,7 @@ const {
   pagesubCardapio,
   pagemontadorPizza,
   pageLogin,
+  pageCadastrar
 } = require("./src/pages");
 
 const nunjucks = require("nunjucks");
@@ -23,6 +24,6 @@ server
   .get("/cardapio", pageCardapio)
   .get("/subcardapio", pagesubCardapio)
   .get("/montadorpizza", pagemontadorPizza)
-
+  .get("/cadastro",pageCadastrar)
   .get("/login", pageLogin)
   .listen(5500);

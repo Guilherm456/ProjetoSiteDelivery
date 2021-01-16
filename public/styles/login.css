@@ -1,29 +1,80 @@
-.header_pag {
+.secao_titulo_pagina{
+  display: flex;
+  justify-content: center;
+}
+
+.secao_titulo_pagina h1{
+  font-size: 25px;
+  color: #14142B;
+  width: max-content;
+  border-bottom: 1px solid #14142B;
+}
+.secao{
+  display: flex;
+  justify-content: center;
+}
+.secao .secao-filho{
+  width: 50%;
+}
+
+.formulario{
   text-align: center;
-}
-.titulo_pag {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: var(--size-titulo-pagina);
-}
-.header_pag hr {
-  max-width: 360px;
+  margin-top: 20px;
+  width: 400px;
 
-  margin-left: auto;
-  margin-right: auto;
+  background: #fff;
+  border-radius: 5px;
 }
 
-.formulario {
-  padding: 48px 8px 0 8px;
-  text-align: center;
+.formulario fieldset{
+  border: none;
+  padding: 20px;
 }
 
-.formulario label {
-  font-size: var(--size-titulo);
-  font-weight: bold;
-  padding-bottom: 5px;
+.formulario .botao{
+  width:100%;
+  max-width: 500px;
 }
 
-.input_bloco {
+
+.input_bloco{
+  text-align: start;
   padding-bottom: 20px;
+}
+
+.requisitos{
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.input_bloco label{
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 14px;
+  color: #646464;
+}
+
+.input_bloco .input{
+  height: 50px;
+  width: 100%;
+  max-width: 500px;
+
+  padding: 8px;
+  color: #646464;
+  background: #fff;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+
+.input_bloco .secao{
+  justify-content: space-between;
+}
+.input_bloco .input:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.input_bloco .input:focus{
+  border-color: #646464;
+  background: #FCFCFC;
 }

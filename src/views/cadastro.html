@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Entrar</title>
+
+      <link rel="stylesheet" href="/styles/main.css" />
+      <link rel="stylesheet" href="/styles/login.css" />
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <meta
+        name="viewport"
+        content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
+      />
+    </head>
+
+    <body>
+      <header>
+        <div class="barrasup">
+        <a onclick="window.history.go(-1); return false;">
+          <svg role="img" class="backbutton" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none"> 
+            <title>Voltar a página anterior</title>
+            <path d="M9 6l-6 6 6 6"/>
+            <path d="M21 12H4"/> <path stroke-linecap="round" d="M3 12h1"/>
+          </svg>
+        </a>
+        <a>
+          <svg role="img" class="menubar" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"> 
+            <title>Fechar menu</title>
+             <path d="M6 7L18 7M6 12L18 12M6 17L18 17"/>
+          </svg>
+        </a>
+      </div>
+      </header>
+
+      <main>
+        <div class="secao">
+        <form action="" class="formulario">
+          <div class="header_pag">
+            <div class="secao_titulo_pagina">
+              <h1>Cadastro</h1>
+            </div>
+          </div>
+
+          <fieldset>
+            <div class="input_bloco">
+              <label for="nome">Nome completo</label> <br />
+              <input id="nome" class="input" autocomplete="name" required />
+            </div>
+            <div class="input_bloco">
+              <label for="email">E-mail</label> <br />
+              <input type="email" id="email" class="input" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="senha">Senha</label> <br />
+              <input type="password" id="senha" class="input" autocomplete="new-password" minlength="8" maxlength="15"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="requisitos abaixo"
+               required/><br />
+              <div class="requisitos">
+                <label for="senha" class="">Deve ter 8 caracteres</label> <br>
+                <label for="senha" class="">Deve ter uma letra maísucula</label> <br>
+                <label for="senha" class="alerta">Deve ter uma letra maísucula</label> <br>
+
+              </div>
+            
+
+            </div>
+            <div class="input_bloco">
+              <label for="senha-confirm">Confirmar senha</label> <br />
+              <input type="password" id="senha-confirm" class="input" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="numero_tel1">Número telefônico</label> <br />
+              <input type="tel" id="numero_tel1" class="input" placeholder="(DDD) 9XXXX-XXXX" minlength="11" maxlength="12" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="numero_tel2">Segundo número telefônico (opcional)</label> <br />
+              <input type="tel" id="numero_tel2" class="input" placeholder="(DDD) 9XXXX-XXXX"/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="aniversario">Data de nascimento</label> <br />
+              <input type="date" id="aniversario" class="input" autocomplete="bday" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="genero">Gênero</label> <br />
+              <select type="number" id="genero" class="input" required/>
+
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="outro">Outro</option>
+              </select> <br />
+            </div>
+            <div class="input_bloco">
+              <label for="CPF">CPF (opcional)</label> <br />
+              <input type="number" id="CPF" class="input" minlength="11" maxlength="11"/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="endereco_valor">Endereço</label> <br>
+              <input type="input" id="endereco_valor" class="input" autocomplete="street_adress"/> <br>
+            </div>
+            
+            <div class="secao input_bloco">
+              <div style="margin-right:5px;" class="secao-filho"> 
+                <label for="numero_resi">Número</label> <br>
+                <input type="number" min="0" id="numero_resi" class="input" autocomplete="street_adress"/> <br>
+              </div>
+              <div class="secao-filho">
+                <label for="bairro_resi">Bairro</label> <br>
+                <!-- mudar por JS -->
+                <select id="bairro_resi" class="input" required> <br>
+                  <option value="VilaGaucha">Vila Gaúcha</option>
+                  <option value="BoaVista">Boa Vista</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input_bloco">
+              <label for="complem_endereco">Complemento</label> <br>
+              <input type="input" id="complem_endereco" class="input" autocomplete="street_adress"/> <br>
+            </div>
+
+            <button type="submit" class="botao cham">Criar conta</button> <br />
+          </fieldset>
+          
+        </form>
+        </div>
+      </main>
+    </body>
+  </html>
+</html>
