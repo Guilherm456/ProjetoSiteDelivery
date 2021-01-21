@@ -35,8 +35,11 @@
 
 }
 
-main {
+body{
+  background: #F9F9F9;
+}
 
+main {
   margin: 56px auto;
 }
 
@@ -84,6 +87,14 @@ li{
   cursor: pointer;
 }
 
+.secao{
+  display: flex;
+  justify-content: center;
+}
+.secao .secao-filho{
+  width: 50%;
+}
+
 /* BOTOES */
 .botao {
   width: 95%;
@@ -127,19 +138,41 @@ li{
 }
 
 
+/* textos */
+h1{
+  font-size: 25px;
+  color:#14142B;
+}
+.texto-padrao{
+  font-size: 14px;
+  color: #646464;
+}
+
 
 /* para svg com ações */
+/* ==========OTIMIZAR */
 .svg-padrao{ 
-  stroke: #000;
+  stroke: #14142B;
+  height: var(--size-icons);
+  width: var(--size-icons);
+  transition: opacity 0.2s ease-in-out;
+  background: none;
+}
+.svg-acao{ 
+  stroke: #FF1919;
   height: var(--size-icons);
   width: var(--size-icons);
   transition: opacity 0.2s ease-in-out;
   background: none;
 }
 
+.svg-acao:hover{
+  opacity: .5;
+}
 .svg-padrao:hover{
   opacity: .5;
 }
+
 /* ===============ELEMENTOS QUE DEVEM SER CORRIGIDOS========== */
 /* algum item desativado */
 .desativado { 

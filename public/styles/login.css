@@ -1,26 +1,16 @@
-.secao_titulo_pagina{
-  display: flex;
-  justify-content: center;
-}
-
-.secao_titulo_pagina h1{
+.secao h1{
   font-size: 25px;
   color: #14142B;
   width: max-content;
   border-bottom: 1px solid #14142B;
-}
-.secao{
-  display: flex;
-  justify-content: center;
-}
-.secao .secao-filho{
-  width: 50%;
+
+  padding-top: 20px;
 }
 
 .formulario{
   text-align: center;
   margin-top: 20px;
-  width: 400px;
+  width: 550px;
 
   background: #fff;
   border-radius: 5px;
