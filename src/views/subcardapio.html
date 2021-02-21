@@ -5,6 +5,9 @@
       <title>Cardápio</title>
       <link rel="stylesheet" href="/styles/main.css" />
       <link rel="stylesheet" href="/styles/subcardapio.css" />
+      <link rel="stylesheet" href="/styles/barra.css" />
+      <link rel="stylesheet" href="/styles/input.css" />
+
       <script src="/scripts/cardapio.js" defer></script>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
@@ -16,25 +19,57 @@
          content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
          />
    </head>
+
    <body>
       <header>
-         <div class="barrasup">
-            <a onclick="window.history.go(-1); return false;">
-               <svg role="img" class="backbutton" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none">
-                  <title>Voltar a página anterior</title>
-                  <path d="M9 6l-6 6 6 6"/>
-                  <path d="M21 12H4"/>
-                  <path stroke-linecap="round" d="M3 12h1"/>
-               </svg>
-            </a>
-            <a>
-               <svg role="img" class="menubar" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter">
-                  <title>Fechar menu</title>
-                  <path d="M6 7L18 7M6 12L18 12M6 17L18 17"/>
-               </svg>
-            </a>
-         </div>
+      <div class="barra-nav-site secao">
+        <div class="emp-inf">
+          <img src="/img/logo_emp.png" alt="Logo da empresa" class="img-emp" />
+          <h3>Beer Point Pizzaria</h3>
+        </div>
+        <div class="barra-botoes">
+        <a>
+          <div class="botoes-barra">
+            <svg class="svg-barra" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+            Perfil
+          </div>
+        </a>
+
+        <a>
+          <div class="botoes-barra">
+            <svg class="svg-barra" viewBox="0 0 16 16">
+              <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zM11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+              <path d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293 2.354.646zm-.217 1.198l.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118l.137-.274z"/>
+            </svg>
+            Pedidos
+          </div>
+        </a>
+
+        <a>
+          <div class="botoes-barra">
+            <svg class="svg-barra" viewBox="0 0 16 16">
+              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+              <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+            Cardápio
+          </div>
+        </a>
+
+        <a>
+          <div class="botoes-barra">
+            <svg class="svg-barra" viewBox="0 0 16 16">
+              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+            </svg>
+            Promoções
+          </div>
+        </a>
+        </div>
+
+      </div>
       </header>
+
       <div id='container-edicao'>
          <div class='editar-produto'>
             <header class='barra-edicao'>
@@ -47,7 +82,7 @@
                </a>
               </div>
               <div class="area-titulo">
-              <h1>Hambúrguer de carne</h1>
+                <h2>Hambúrguer de carne</h2>
               </div>
             </header>
             <div class='area-foto-produto'>
@@ -55,177 +90,64 @@
             </div>
             <form action="">
                <section class='area-infs-edicao'>
+                 <article>
+                      <div class='area-titulo-secao'>
+                        <h3>Ingredientes</h3>
+                      </div>
+                     <ul class='lista-opcoes-add input-radio'>
+                        <li>
+                           <label for="adicional-1" class='infs-add'>
+                              <h3 class="texto-padrao">Título</h2>
+                           </label>
+                           <div class="area-input">
+                              <input type="checkbox" class="input" id="adicional-1" name="adicional" checked>
+                           </div>
+                        </li>
+                     </ul>
+                  </article>
                   <article>
                       <div class='area-titulo-secao'>
-                        <h2>Adicionais</h2>
+                        <h3>Adicionais</h3>
                         <p>Limite: 1</p>
                       </div>
                      <ul class='lista-opcoes-add input-radio'>
                         <li>
                            <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
+                              <h3 class="texto-padrao">Título</h2>
+                              <p class="descricao">Descrição</p>
+                              <p class="preco_produto">Preço</p>
                            </label>
                            <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li>
-                        <li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li>
-                         <li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
-                           </div>
-                        </li><li>
-                           <label for="adicional-1" class='infs-add'>
-                              <h3 class="texto-padrao">Cheddar</h3>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
-                           </label>
-                           <div class="area-input">
-                              <input type="radio" id="adicional-1" name="adicional" required>
+                              <input type="radio" class="input" id="adicional-1" name="adicional" required>
                            </div>
                         </li>
                      </ul>
                   </article>
                   <article>
                     <div class='area-titulo-secao'>
-                      <h2>Adicionais</h2>
+                      <h3>Adicionais</h3>
                       <p>Limite: 2</p>
                     </div>
                     <ul class='lista-opcoes-add input-number'>
                         <li>
                            <label for="adicional-1" class='infs-add'>
-                              <h2 class="texto-padrao">Cheddar</h2>
-                              <p class="descricao">100g de cheddar</p>
-                              <p class="preco_produto">+ R$16,00</p>
+                              <h3 class="texto-padrao">Título</h2>
+                              <p class="descricao">Descrição</p>
+                              <p class="preco_produto">Preço</p>
                            </label>
                            <div class="area-input">
-                              <div class="area-numero-add">
+                              <div class="area-numero-add sem-borda">
                                  <a>
-                                    <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-padrao desativado">
+                                    <svg role='img' viewBox="0 0 16 16" class="svg-acao desativado">
                                        <title>Diminuir número de adicional</title>
-                                       <path d="M20,12 L4,12"/>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                     </svg>
                                  </a>
                                  <p class="numero-adicionado">0</p>
                                  <a>
-                                    <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-padrao">
+                                    <svg role='img' viewBox="0 0 16 16" class="svg-acao">
                                        <title>Aumentar número de adicional</title>
-                                       <path d="M20 12L4 12M12 4L12 20"/>
+                                       <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                  </a>
                               </div>
@@ -237,16 +159,16 @@
                <footer class="area-conclusao-add">
                      <div class="area-numero-add">
                         <a>
-                           <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-acao desativado">
-                              <title>Diminuir número de adicional</title>
-                              <path d="M20,12 L4,12"/>
+                           <svg role='img' viewBox="0 0 16 16" class="svg-acao desativado">
+                              <title>Diminuir um produto</title>
+                              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                            </svg>
                         </a>
                         <p class="numero-adicionado">0</p>
                         <a>
-                           <svg role='img' viewBox='0 0 24 24' stroke-width='1' stroke-linecap='square' stroke-linejoin='miter' class="svg-acao">
-                              <title>Aumentar número de adicional</title>
-                              <path d="M20 12L4 12M12 4L12 20"/>
+                           <svg role='img' viewBox="0 0 16 16" class="svg-acao">
+                              <title>Adicionar mais um produto</title>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                            </svg>
                         </a>
                      </div>
@@ -254,9 +176,8 @@
                   </div>
                </footer>
             </form>
-         </div>
       </div>
-      </div>
+  
       <main>
          <ul class="subnav">
             <li>

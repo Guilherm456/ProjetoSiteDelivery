@@ -2,10 +2,11 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Cardápio</title>
+    <title>Finalizar pedido</title>
 
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/cardapios.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="stylesheet" href="/styles/input.css" />
     <link rel="stylesheet" href="/styles/barra.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -69,26 +70,60 @@
       </div>
     </header>
 
-    <main>
-      <a href="/montadorpizza">
-        <div class="secoes">
-          <div class="fundo"></div>
-          <div class="titulo">
-            <h1 class="textocardapio">Pizza</h1>
-            <p class="textocardapio">Muito bom!</p>
-          </div>
+    <main class="secao">
+      <form class="formulario">
+        <div class="header_pag secao">
+          <h1>Finalizar pedido</h1>
         </div>
-      </a>
+        <fieldset>
+          <div> <!--div para selecionar se é entrega ou retirada-->
+            <div class="input_bloco">
+              <div class="alinhado">
+                <input  class="input" type="radio" name="formaeb" id="entrega"/>
+                <label for="entrega">Entrega</label>
+              </div>
+                <select id="endereco-salvo" class="input" required/>
+                  <option value="end1">R. X</option>
+                  <option value="endn" style="font-weight:bold">+ Novo Endereço</option>
+                </select> <br />
+            </div>
+            <div class="input_bloco">
+              <div class="alinhado">
+                <input class="input" type="radio" name="formaeb" id="retirada">
+                <label for="retirada">Retirada</label>
+              </div>
+            </div>
+          </div>
 
-      <a href="/subcardapio">
-        <div class="secoes">
-          <div class="fundo"></div>
-          <div class="titulo">
-            <h1 class="textocardapio">Hambúrguer</h1>
-            <p class="textocardapio">Muito bom!</p>
+          <div class="input_bloco">
+            <label for="formapagamento">Forma de pagamento</label>
+            <select name="formapagamento" class="input" required>
+              <option value="din">Dinheiro 💵</option>
+              <option value="cartcred">Cartão de crédito 💳</option>
+              <option value="cartdeb">Cartão de débito 💳</option>
+            </select>
+            <div class="secao alinhado">
+              <label class="secao-filho">Troco para R$</label>
+              <input class="input secao-filho" type="number"/>
+            </div>
+
           </div>
-        </div>
-      </a>
+
+          <div class="input_bloco">
+            <label for="obs-pedido">Observações do pedido (opcional)</label> <br />
+            <textarea type="password" id="senha-confirm" class="input" spellcheck="true" maxlength="500"></textarea><br />
+          </div>
+          
+          <p>
+            Sub-total: R$30,00 <br>
+            Taxa de entrega: R$3,00 <br>
+            Desconto: Nenhum <br>
+          </p>
+          <h2>Total: R$33,00</h2> <br>
+
+          <button class="botao cham">Finalizar</button>
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>

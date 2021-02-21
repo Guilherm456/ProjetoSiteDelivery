@@ -2,14 +2,13 @@
   font-size: 25px;
   color: #14142B;
   width: max-content;
-  border-bottom: 1px solid #14142B;
+  /* border-bottom: 1px solid #14142B; */
 
   padding-top: 20px;
 }
 
 .formulario{
   text-align: center;
-  margin-top: 20px;
   width: 550px;
 
   background: #fff;
@@ -27,44 +26,26 @@
 }
 
 
-.input_bloco{
-  text-align: start;
-  padding-bottom: 20px;
-}
-
 .requisitos{
   padding-top: 5px;
   padding-left: 5px;
 }
 
-.input_bloco label{
-  display: inline-block;
-  padding-left: 5px;
-  font-size: 14px;
-  color: #646464;
-}
-
-.input_bloco .input{
-  height: 50px;
-  width: 100%;
-  max-width: 500px;
-
-  padding: 8px;
-  color: #646464;
-  background: #fff;
-  border: 1px solid #E4E4E4;
-  border-radius: 5px;
-  outline: none;
-  transition: all 0.2s ease-in;
-}
-
 .input_bloco .secao{
   justify-content: space-between;
 }
-.input_bloco .input:hover{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+.feedback-input{
+  display: none;  
 }
-.input_bloco .input:focus{
-  border-color: #646464;
-  background: #FCFCFC;
+
+.input:required:invalid + .feedback-input{
+  display: inline-block;
+}
+
+@media (min-width: 700px) {
+  .formulario{
+    margin-top: 20px;
+    height: min-content;
+  }
 }
