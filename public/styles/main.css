@@ -1,17 +1,28 @@
 :root {
+  /* inutilizar */
   --color-background-bar: #343837;
   --color-background-button: #f0f0f0;
-  --color-border-button: #c4c4c4;
   --color-sub-bar: #d8d8d8;
+
+  --color-dest: #fff;
+  --color-border-dest: #646464;
+  --color-border-normal: #E4E4E4;
+  --color-backgroud-input-focus: #FCFCFC; 
+
+  --color-border-button: #c4c4c4;
   --color-border-input: #7a7a7a;
-  --color-background-input: rgba(134, 134, 134, 0.2);
-  --color-background-button-flashy: #ea1d2c;
+  /* --color-background-input: rgba(134, 134, 134, 0.2); */
+  --color-background-button-flashy: #FF1B1B;
   --color-background-button-off: #000;
 
+  --color-red-action: #FA0000;
+  --color-red-calm: #FF1919;
+
+  --color-titulo: #14142B;
   --color-text: #000;
-  --color-text-alert: #ff2d2d;
   --color-text-normal: #333333;
 
+  --size-button-text: 18px;
   --size-titulo-pagina: 45px;
   --size-supertitulo: 30px;
   --size-titulo: 22px;
@@ -20,20 +31,54 @@
 
   --size-picture: 88px;
   --size-icons: 32px;
+  --size-input: 32px;
+
+  --padding-peq: 5px;
+  --padding-grand: 20px;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  max-width: 100%;
+
 }
 
-main {
-  margin: 56px auto;
+body{
+  background: #F9F9F9;
 }
 
 a {
   cursor: pointer;
+}
+
+li{
+  list-style: none;
+}
+
+h1{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-titulo);
+}
+
+h2{
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-titulo);
+}
+
+h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-titulo);
+}
+
+p{
+  font-size: 14px;
+  color: #000;
 }
 
 .titulodestaque {
@@ -41,84 +86,122 @@ a {
   font-weight: bold;
 }
 
-.barrasup {
-  position: fixed;
-  top: 0;
-
-  width: 100%;
-  height: 56px;
-  z-index: 2;
-
-  box-sizing: border-box;
-
-  background-color: var(--color-background-bar);
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+.link-action{
+  color: var(--color-red-calm);
+  text-decoration: none;
 }
 
-.barrasup a {
-  padding-left: 2.5px;
-  cursor: pointer;
+.secao{
+  display: flex;
+  justify-content: center;
 }
 
-.backbar {
-  float: left;
-  width: 56px;
-}
-.menubar {
-  float: right;
-  width: 56px;
+.secao-coluna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.alinhado{
+  display: flex;
+  align-items: center;
+}
+
+/* BOTOES */
 .botao {
-  width: 360px;
-  max-width: 95%;
-  height: 52px;
-  cursor: pointer;
-  margin-bottom: 25px;
+  width: 95%;
+  max-width: 350px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
   border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+
+  transition: all 0.2s ease-in-out;
 }
 .botao:hover {
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
-}
-.botao.sub {
-  background-color: var(--color-background-button);
-  border: 1px solid var(--color-border-button);
-  color: #000;
-
-  font-size: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .botao.cham {
-  background-color: var(--color-background-button-flashy);
-  border: 0px;
-  border-radius: 5px;
+  background-color: var(--color-red-action);
+  color: #fff;
+  border: none;
+}
+.botao.cham:active{
+  background-color: #fff;
+  border: 1px solid var(--color-red-calm);
 
   font-weight: bold;
+  color: var(--color-red-calm);
+}
+
+.botao.of { 
+  background-color: #fff;
+  border: 1px solid var(--color-red-calm);
+  color: var(--color-red-calm);
+}
+.botao.of:active{
+  background: var(--color-red-action);
   color: #fff;
-  font-size: 30px;
 }
 
-.botao.of {
-  background-color: var(--color-background-button-off);
-  border: 0px;
 
-  font-weight: bold;
-  color: #fff;
-  font-size: 30px;
+/* textos */
+.texto-padrao{
+  font-size: 14px;
+  color: #646464;
 }
 
-.input {
-  width: 360px;
-  max-width: 95%;
-  height: 43px;
-
-  border: 1px solid var(--color-border-input);
-  background: var(--color-background-input);
-  border-radius: 10px;
-
-  transition: background 0.2s;
+.texto-svg{
+  padding-left: 5px;
 }
 
-.input:hover {
-  background: var(--color-sub-bar);
+
+/* para svg com ações */
+/* ==========OTIMIZAR */
+.svg-padrao{ 
+  fill: #14142B;
+  height: var(--size-icons);
+  width: var(--size-icons);
+  transition: opacity 0.2s ease-in-out;
+  background: none;
+}
+.svg-acao{ 
+  stroke: #FF1919;
+  height: var(--size-icons);
+  width: var(--size-icons);
+  transition: opacity 0.2s ease-in-out;
+  background: none;
+}
+
+.svg-acao:hover{
+  opacity: .5;
+}
+
+/* ===============ELEMENTOS QUE DEVEM SER CORRIGIDOS========== */
+/* algum item desativado */
+.desativado { 
+  opacity: .4;
+  transition: none;
+  cursor: initial;
+}
+.desativado:hover{
+  opacity: .4; 
+}
+
+.invalidado{
+  border: 1.5px solid var(--color-red-action)!important;
+}
+
+.alerta{
+  color: var(--color-red-calm)!important;
+  border-color: var(--color-red-calm)!important;
+}
+
+.alerta svg{
+  fill: var(--color-red-calm);
 }

@@ -2,11 +2,12 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Cardápio</title>
+    <title>Página inicial</title>
 
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/cardapios.css" />
     <link rel="stylesheet" href="/styles/barra.css" />
+    <link rel="stylesheet" href="/styles/input.css">
+    <link rel="stylesheet" href="/styles/login.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -70,25 +71,33 @@
     </header>
 
     <main>
-      <a href="/montadorpizza">
-        <div class="secoes">
-          <div class="fundo"></div>
-          <div class="titulo">
-            <h1 class="textocardapio">Pizza</h1>
-            <p class="textocardapio">Muito bom!</p>
+      <div class="secao">
+        <div class="formulario">
+          <div class="secao">
+            <h1>Perfil</h1>
           </div>
-        </div>
-      </a>
+          <fieldset>
+            <h3>Guilherme Vier</h3>
 
-      <a href="/subcardapio">
-        <div class="secoes">
-          <div class="fundo"></div>
-          <div class="titulo">
-            <h1 class="textocardapio">Hambúrguer</h1>
-            <p class="textocardapio">Muito bom!</p>
-          </div>
+            <p>40 pedidos</p>
+            <p>email@email.com</p>
+
+            <div class="input_bloco">
+              <label for="">Endereços salvos</label>
+              <select name="" id="" class="input">
+                <option>R. Bela, 69</option>
+                <option><b>Novo endereço</b></option>
+              </select>
+            </div>
+            <a href="" class="link-action">
+              
+              Link
+            </a>
+
+            <button class="botao cham">Editar dados</button>
+          </fieldset>
         </div>
-      </a>
+      </div>
     </main>
   </body>
 </html>

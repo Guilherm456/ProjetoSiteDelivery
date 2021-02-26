@@ -1,29 +1,56 @@
-.header_pag {
-  text-align: center;
-}
-.titulo_pag {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: var(--size-titulo-pagina);
-}
-.header_pag hr {
-  max-width: 360px;
-
-  margin-left: auto;
-  margin-right: auto;
+.secao-input{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-.formulario {
-  padding: 48px 8px 0 8px;
-  text-align: center;
+.secao-input .secao-filho{
+  flex-basis: calc(50% - var(--padding-peq));
 }
 
-.formulario label {
-  font-size: var(--size-titulo);
-  font-weight: bold;
-  padding-bottom: 5px;
+.secao h1{
+  font-size: 25px;
+  color: #14142B;
+  width: max-content;
+  /* border-bottom: 1px solid #14142B; */
+
+  padding-top: var(--padding-grand);
 }
 
-.input_bloco {
-  padding-bottom: 20px;
+
+.formulario fieldset{
+  border: none;
+  padding: var(--padding-grand);
+}
+
+.formulario .botao{
+  width:100%;
+  max-width: 500px;
+}
+
+
+.requisitos{
+  padding-top: var(--padding-peq);
+  padding-left: var(--padding-peq);
+}
+
+.input_bloco .secao{
+  justify-content: space-between;
+}
+
+.feedback-input{
+  display: none;  
+}
+
+.input:required:invalid + .feedback-input{
+  display: inline-block;
+}
+
+
+@media (min-width: 700px) {
+  .secao-input{
+    padding-left: var(--padding-peq);
+    padding-right: var(--padding-peq);
+  }
 }

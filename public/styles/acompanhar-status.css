@@ -1,0 +1,17 @@
+.desativar{
+  display: none;
+}
+
+
+.big-svg{
+  width: 150px;
+  height: 150px;
+}
+
+.box-padding{
+  padding: 20px;
+}
+
+.box-padding h3{
+  color: var(--color-text);
+}

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+  <html>
+    <head>
       <meta charset="UTF-8" />
-      <title>Entrar</title>
+      <title>Cadastro</title>
 
       <link rel="stylesheet" href="/styles/main.css" />
       <link rel="stylesheet" href="/styles/login.css" />
-      <link rel="stylesheet" href="/styles/input.css">
-      <link rel="stylesheet" href="/styles/barra.css">
+      <link rel="stylesheet" href="/styles/input.css" />
+      <link rel="stylesheet" href="/styles/barra.css" />
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
@@ -21,7 +22,7 @@
     </head>
 
     <body>
-     <header>
+      <header>
       <div class="barra-nav-site secao">
         <div class="emp-inf">
           <img src="/img/logo_emp.png" alt="Logo da empresa" class="img-emp" />
@@ -68,36 +69,101 @@
         </div>
 
       </div>
-    </header>
+      </header>
 
       <main>
         <div class="secao">
         <form action="" class="formulario">
-          <div class="secao">
-            <h1>Login</h1>
+          <div class="header_pag">
+            <div class="secao">
+              <h1>Cadastro</h1>
+            </div>
           </div>
-          
+
           <fieldset>
+            <div class="input_bloco">
+              <label for="nome">Nome completo</label> <br />
+              <input id="nome" class="input" autocomplete="name" required />
+            </div>
             <div class="input_bloco">
               <label for="email">E-mail</label> <br />
               <input type="email" id="email" class="input" required/><br />
             </div>
             <div class="input_bloco">
               <label for="senha">Senha</label> <br />
-              <input type="password" id="senha" class="input" required/><br />
+              <input type="password" id="senha" class="input" autocomplete="new-password" minlength="8" maxlength="15"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="requisitos abaixo"
+               required/><br />
+              <div class="requisitos">
+                <span for="senha" class="feedback-input">Deve ter 8 caracteres</span> <br>
+                <span for="senha" class="">Deve ter uma letra maísucula</span> <br>
+                <span for="senha" class="alerta">Deve ter uma letra maísucula</span> <br>
+
+              </div>
+            
+
             </div>
+            <div class="input_bloco">
+              <label for="senha-confirm">Confirmar senha</label> <br />
+              <input type="password" id="senha-confirm" class="input" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="numero_tel1">Número telefônico</label> <br />
+              <input type="tel" id="numero_tel1" class="input" placeholder="(DDD) 9XXXX-XXXX" minlength="11" maxlength="12" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="numero_tel2">Segundo número telefônico (opcional)</label> <br />
+              <input type="tel" id="numero_tel2" class="input" placeholder="(DDD) 9XXXX-XXXX"/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="aniversario">Data de nascimento</label> <br />
+              <input type="date" id="aniversario" class="input" autocomplete="bday" required/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="genero">Gênero</label> <br />
+              <select type="number" id="genero" class="input" required/>
+
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="outro">Outro</option>
+              </select> <br />
+            </div>
+            <div class="input_bloco">
+              <label for="CPF">CPF (opcional)</label> <br />
+              <input type="number" id="CPF" class="input" minlength="11" maxlength="11"/><br />
+            </div>
+            <div class="input_bloco">
+              <label for="endereco_valor">Endereço</label> <br>
+              <input type="input" id="endereco_valor" class="input" autocomplete="street_adress"/> <br>
+            </div>
+            
             <div class="secao-input input_bloco">
+              <div class="secao-filho"> 
+                <label for="numero_resi">Número</label> <br>
+                <input type="number" min="0" id="numero_resi" class="input" autocomplete="street_adress"/> <br>
+              </div>
               <div class="secao-filho">
-                <button type="submit" class="botao cham">Entrar</button>
-              </div> 
-              <div class="secao-filho">
-                <button type="button" onclick="location.href = '/cadastro'" class="botao of">Criar conta</button>
+                <label for="bairro_resi">Bairro</label> <br>
+                <!-- mudar por JS -->
+                <select id="bairro_resi" class="input" required> <br>
+                  <option value="VilaGaucha">Vila Gaúcha</option>
+                  <option value="BoaVista">Boa Vista</option>
+                </select>
               </div>
             </div>
-            <a href="" class="link-action">Esqueceu a senha?</a>
+
+            <div class="input_bloco">
+              <label for="complem_endereco">Complemento</label> <br>
+              <input type="input" id="complem_endereco" class="input" autocomplete="street_adress"/> <br>
+            </div>
+
+            <button type="submit" class="botao cham">Criar conta</button> <br />
           </fieldset>
+          
         </form>
         </div>
       </main>
     </body>
+  </html>
 </html>
