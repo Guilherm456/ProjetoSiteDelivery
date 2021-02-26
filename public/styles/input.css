@@ -1,12 +1,13 @@
 /* inputs */
 .input_bloco{
-  text-align: start;
   padding-bottom: 20px;
 }
 
 .input_bloco label{
+  text-align: start;
+  width: 100%;
   display: inline-block;
-  padding-left: 5px;
+  padding-left: 10px;
   font-size: 14px;
   color: var(--color-border-dest);
 }
@@ -23,6 +24,10 @@
   border-radius: 5px;
   outline: none;
   transition: all 0.2s ease-in;
+}
+
+.input-enviado:invalid{
+  border-color: var(--color-red-calm);
 }
 
 .input:hover{
@@ -61,4 +66,19 @@
 
 .input[type="radio"]:hover, .input[type="checkbox"]:hover{
   border-color: var(--color-border-dest);
+}
+
+.formulario{
+  height: 100vh;
+  width: 550px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+@media (min-width: 700px) {
+  .formulario{
+    margin-top: 20px;
+    height: min-content;
+  }
 }

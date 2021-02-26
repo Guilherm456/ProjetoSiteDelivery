@@ -1,23 +1,27 @@
+.secao-input{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.secao-input .secao-filho{
+  flex-basis: calc(50% - var(--padding-peq));
+}
+
 .secao h1{
   font-size: 25px;
   color: #14142B;
   width: max-content;
   /* border-bottom: 1px solid #14142B; */
 
-  padding-top: 20px;
+  padding-top: var(--padding-grand);
 }
 
-.formulario{
-  text-align: center;
-  width: 550px;
-
-  background: #fff;
-  border-radius: 5px;
-}
 
 .formulario fieldset{
   border: none;
-  padding: 20px;
+  padding: var(--padding-grand);
 }
 
 .formulario .botao{
@@ -27,8 +31,8 @@
 
 
 .requisitos{
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-top: var(--padding-peq);
+  padding-left: var(--padding-peq);
 }
 
 .input_bloco .secao{
@@ -43,9 +47,10 @@
   display: inline-block;
 }
 
+
 @media (min-width: 700px) {
-  .formulario{
-    margin-top: 20px;
-    height: min-content;
+  .secao-input{
+    padding-left: var(--padding-peq);
+    padding-right: var(--padding-peq);
   }
 }

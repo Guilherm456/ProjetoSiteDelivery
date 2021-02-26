@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-      <meta charset="UTF-8" />
-      <title>Entrar</title>
+    <meta charset="UTF-8" />
+    <title>Página inicial</title>
 
-      <link rel="stylesheet" href="/styles/main.css" />
-      <link rel="stylesheet" href="/styles/login.css" />
-      <link rel="stylesheet" href="/styles/input.css">
-      <link rel="stylesheet" href="/styles/barra.css">
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/barra.css" />
+    <link rel="stylesheet" href="/styles/input.css">
+    <link rel="stylesheet" href="/styles/login.css">
 
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-      <meta
-        name="viewport"
-        content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
-      />
-    </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+  </head>
 
-    <body>
-     <header>
+  <body>
+    <header>
       <div class="barra-nav-site secao">
         <div class="emp-inf">
           <img src="/img/logo_emp.png" alt="Logo da empresa" class="img-emp" />
@@ -70,34 +70,34 @@
       </div>
     </header>
 
-      <main>
-        <div class="secao">
-        <form action="" class="formulario">
+    <main>
+      <div class="secao">
+        <div class="formulario">
           <div class="secao">
-            <h1>Login</h1>
+            <h1>Perfil</h1>
           </div>
-          
           <fieldset>
+            <h3>Guilherme Vier</h3>
+
+            <p>40 pedidos</p>
+            <p>email@email.com</p>
+
             <div class="input_bloco">
-              <label for="email">E-mail</label> <br />
-              <input type="email" id="email" class="input" required/><br />
+              <label for="">Endereços salvos</label>
+              <select name="" id="" class="input">
+                <option>R. Bela, 69</option>
+                <option><b>Novo endereço</b></option>
+              </select>
             </div>
-            <div class="input_bloco">
-              <label for="senha">Senha</label> <br />
-              <input type="password" id="senha" class="input" required/><br />
-            </div>
-            <div class="secao-input input_bloco">
-              <div class="secao-filho">
-                <button type="submit" class="botao cham">Entrar</button>
-              </div> 
-              <div class="secao-filho">
-                <button type="button" onclick="location.href = '/cadastro'" class="botao of">Criar conta</button>
-              </div>
-            </div>
-            <a href="" class="link-action">Esqueceu a senha?</a>
+            <a href="" class="link-action">
+              
+              Link
+            </a>
+
+            <button class="botao cham">Editar dados</button>
           </fieldset>
-        </form>
         </div>
-      </main>
-    </body>
+      </div>
+    </main>
+  </body>
 </html>

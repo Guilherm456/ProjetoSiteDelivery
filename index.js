@@ -9,7 +9,9 @@ const {
   finalizarpedido,
   pageLogin,
   pageCadastrar,
-  pageAcompanharStatus
+  pagePerfil,
+  pageAcompanharStatus,
+  page404
 } = require("./src/pages");
 
 const nunjucks = require("nunjucks");
@@ -30,6 +32,8 @@ server
   
   .get("/cadastro",pageCadastrar)
   .get("/login", pageLogin)
-
+  .get("/perfil", pagePerfil)
+  
   .get("/acompanhar-status",pageAcompanharStatus)
+  .get('*', page404)
   .listen(5500);

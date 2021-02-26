@@ -32,6 +32,9 @@
   --size-picture: 88px;
   --size-icons: 32px;
   --size-input: 32px;
+
+  --padding-peq: 5px;
+  --padding-grand: 20px;
 }
 
 * {
@@ -83,15 +86,14 @@ p{
   font-weight: bold;
 }
 
-
+.link-action{
+  color: var(--color-red-calm);
+  text-decoration: none;
+}
 
 .secao{
   display: flex;
   justify-content: center;
-}
-
-.secao .secao-filho{
-  width: 50%;
 }
 
 .secao-coluna{

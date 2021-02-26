@@ -19,9 +19,16 @@ function pageLogin(req, res) {
 function pageCadastrar(req,res){
   return res.render("cadastro.html");
 }
+function pagePerfil(req,res){
+  return res.render("perfil.html");
+}
 
 function pageAcompanharStatus (req,res){
   return res.render("acompanhar-status.html");
+}
+
+function page404 (req,res){
+  return res.render("404.html");
 }
 
 //Exporta os dados (paginas)
@@ -33,5 +40,7 @@ module.exports = {
   finalizarpedido,
   pageLogin,
   pageCadastrar,
-  pageAcompanharStatus
+  pagePerfil,
+  pageAcompanharStatus,
+  page404
 };
